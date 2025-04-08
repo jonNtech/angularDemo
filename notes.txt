@@ -1,0 +1,10 @@
+i want a header component
+i want a home component
+show angualr devtools in chrome
+show how signals work
+show the different files of a component when its created
+show the data binding from video
+show api calls to pokemon
+show how routing works
+show different ways for styling- SCSS, tailiwindcss
+show server files

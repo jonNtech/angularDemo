@@ -17,13 +17,11 @@ const commonEngine = new CommonEngine();
  * Uncomment and define endpoints as necessary.
  *
  * Example:
- * ```ts
- * app.get('/api/**', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
-
+  ```ts*/
+//   app.get('https://pokeapi.co/api/v2/', (req, res) => {
+    
+//  });
+ 
 /**
  * Serve static files from /browser
  */

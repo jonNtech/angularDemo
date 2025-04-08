@@ -1,0 +1,1 @@
+{ path: '', component: HomeComponent, pathMatch: 'full' }, 
