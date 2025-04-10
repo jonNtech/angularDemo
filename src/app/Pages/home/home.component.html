@@ -1,12 +1,29 @@
-<p>home works!</p>
-<p>this is the set value component</p>
+<div class="m-5">
+  <p>{{ title }}</p>
+  <br />
+  <!-- <p>This is the original component</p>
+  <app-counter /> -->
+  <br />
+  <p>This is the binding component</p>
+  <app-binding />
+  <!-- <app-binding [signalBinding]="signalBindingFromHome()" /> -->
+  <br />
+  <div class="m-5">
+    <!-- lets talk about event handlers -->
+    <input
+      type="text"
+      class="border p-2 rounded"
+      placeholder="press a key"
+      (keyup)="keyUpHandler($event)"
+    />
+  </div>
 
-<app-counter counterValue="5" />
-<br />
-<p>This is the original component</p>
-<app-counter>
-  <p>counter works!</p>
-  <p>this is inside the component</p>
-</app-counter>
+  <br />
 
-<p>this is outside</p>
+  <div class="m-5">
+    <app-counter [counter]="5" />
+    <br />
+  </div>
+
+  <app-form />
+</div>

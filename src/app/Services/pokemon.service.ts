@@ -1,32 +1,18 @@
-import { HttpClient } from '@angular/common/http';
+// pokemon.service.ts
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { pokemon } from '../Models/pokemon';
 
 @Injectable({
   providedIn: 'root',
 })
 export default class PokemonService {
-  private baseUrl: string = 'https://pokeapi.co/api/v2/';
+  private apiUrl = 'https://pokeapi.co/api/v2/pokemon'; // or whatever your API endpoint is
 
   constructor(private http: HttpClient) {}
 
-  getPokemonData(endpoint: string = ''): Observable<any> {
-    return this.http.get(`${this.baseUrl}${endpoint}`);
-  }
-
-  getPokemonByIdOrName(idOrName: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}pokemon/${idOrName}`);
-  }
-
-  getPokemonTypeByIdOrName(idOrName: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}type/${idOrName}`);
-  }
-
-  getPokemonItemByIdOrName(idOrName: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}item/${idOrName}`);
-  }
-
-  getPokemonAbilityByIdOrName(idOrName: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}ability/${idOrName}`);
+  getPokemonData(): Observable<any> {
+    return this.http.get<any>(this.apiUrl);
   }
 }

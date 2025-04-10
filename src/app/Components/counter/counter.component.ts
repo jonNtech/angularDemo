@@ -1,23 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
-  imports: [],
-  templateUrl: './counter.component.html',
-  styleUrl: './counter.component.css',
+  templateUrl: 'counter.component.html',
+  styleUrls: ['counter.component.css'],
 })
 export class CounterComponent {
-  counterValue: number = 0;
+  @Input() counter: number = 0; // Default value is 0
+  @Input() step: number = 1; // Default step value is 1
   increment() {
-    this.counterValue++;
+    this.counter += this.step;
   }
   decrement() {
-    this.counterValue--;
+    this.counter -= this.step;
   }
   reset() {
-    this.counterValue = 0;
+    this.counter = 0;
   }
-  incrementBy(value: number) {
-    this.counterValue += value;
+  constructor() {
+    console.log('CounterComponent initialized ');
   }
 }

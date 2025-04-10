@@ -1,6 +1,9 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { PokemonComponent } from './Pages/pokemon/pokemon.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { CounterComponent } from './Components/counter/counter.component';
+import { BindingComponent } from './Components/binding/binding.component';
 
 import { routes } from './app.routes';
 import {
