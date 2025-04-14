@@ -11,7 +11,7 @@ import { FormComponent } from '../../Components/form/form.component';
 })
 export class HomeComponent {
   title: string = 'This is the Home Component';
-
+  ifTrue = true;
   //this is for databinding to the bind-component
   signalBindingFromHome = signal('Signal Binding Value from Home Component');
 

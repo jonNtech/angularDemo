@@ -2,4 +2,11 @@
   <p>These are my bindings:</p>
   <P>{{ regularBinding }}</P>
   <p>{{ signalBinding() }}</p>
+
+  <p>2 way binding built in: {{ newInput }}</p>
+  <input
+    type="text"
+    [(ngModel)]="newInput"
+    class="border-2 border-gray-300 p-2 rounded"
+  />
 </div>
