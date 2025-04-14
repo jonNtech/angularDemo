@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { CounterComponent } from '../../Components/counter/counter.component';
 import { BindingComponent } from '../../Components/binding/binding.component';
 import { FormComponent } from '../../Components/form/form.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [CounterComponent, BindingComponent, FormComponent],
+  imports: [CounterComponent, BindingComponent, FormComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
