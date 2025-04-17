@@ -1,29 +1,29 @@
 <div class="m-5">
-  <p>{{ title }}</p>
+  <p>This is: {{ title }}</p>
   <br />
-  <!-- <p>This is the original component</p>
-  <app-counter /> -->
+  <!-- <p>This is the counter component</p>
+  <app-counter [counter]="4" [step]="5" /> -->
   <br />
-  <p>This is the binding component</p>
-  <app-binding />
+  <!-- <p>This is the binding component</p> -->
+  <!-- <app-binding /> -->
   <!-- <app-binding [signalBinding]="signalBindingFromHome()" /> -->
   <br />
   <div class="m-5">
     <!-- lets talk about event handlers -->
-    <input
+    <!-- <input
       type="text"
       class="border p-2 rounded"
       placeholder="press a key"
       (keyup)="keyUpHandler($event)"
-    />
+    /> -->
   </div>
 
   <br />
 
-  <div class="m-5" *ngIf="ifTrue">
+  <!-- <div class="m-5" *ngIf="ifTrue">
     <app-counter [counter]="5" />
     <br />
-  </div>
+  </div> -->
 
-  <app-form />
+  <!-- <app-form /> -->
 </div>

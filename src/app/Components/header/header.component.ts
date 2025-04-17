@@ -8,4 +8,3 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {}
-//this has the routerlink import to use the router links in the header component. this is great for navigation.

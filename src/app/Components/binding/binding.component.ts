@@ -8,10 +8,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './binding.component.css',
 })
 export class BindingComponent {
-  newInput = '';
+  newInput: string = '';
   regularBinding = 'Regular Binding Value';
 
   // angular 16 or up
-  signalBinding = signal('Signal Binding Value');
-  //signalBinding = input('Signal Binding Value');
+  //signalBinding = signal('Signal Binding Value');
+  signalBinding = input('Signal Binding Value');
 }
